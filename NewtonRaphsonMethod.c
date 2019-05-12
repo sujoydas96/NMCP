@@ -12,7 +12,8 @@ int main()
     float x1,x2;
     const float e=0.00001;
     puts("Enter the guess value");
-    scanf("%f",&x1);x2=x1-(f(x1)/fd(x1));
+    scanf("%f",&x1);
+    x2=x1-(f(x1)/fd(x1));
 
     while(fabs(x2-x1)>e)
     {

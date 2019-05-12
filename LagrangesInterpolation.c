@@ -8,15 +8,15 @@ int main()
   puts("Enter number of data : ");
   scanf("%d", &n);
 
-  puts("Enter the independent variable values( values of x ) :");
+  puts("Enter the independent variable values ( values of x ) :");    //for loop takes the values of x
   for (i = 0; i < n; i++)
     scanf("%f", &x[i]);
 
-  puts("Enter the dependent variable values( values of y ) :");
+  puts("Enter the dependent variable values ( values of y ) :");     //for loop takes the value of y
   for (i = 0; i < n; i++)
     scanf("%f", &y[i]);
 
-  puts("Enter the required value of the independent variable : ");
+  puts("Enter the required value of the independent variable () : ");
   scanf("%f", &ax);
 
   for (i = 0; i < n; i++)

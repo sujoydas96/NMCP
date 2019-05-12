@@ -13,9 +13,9 @@ int main()
     puts("Enter the two guess values");
     scanf("%f%f",&x1,&x2);
 
-    x=(x1*f2-x2*f1)/(f2-f1);
     f1=fun(x1);
     f2=fun(x2);
+    x=(x1*f2-x2*f1)/(f2-f1);
     f=fun(x);
 
     if(f1*f2<0)

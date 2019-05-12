@@ -13,16 +13,18 @@ int main()
     const float e=0.00001;
     puts("Enter two guess values:");
     scanf("%f%f",&x1,&x2);
-    x3=x1*f(x2)-x2*f(x1)/(f(x2)-f(x1));
-    printf("The root after iteration %d is %f\n",i,x3);
 
-    while(fabs(x3-x2)>e)
+    /* The program is slightly different from the one written in the classes. The program written in the class
+      consisted of finding the variable x3 before the initiation of the for loop */
+
+    while(fabs(x2-x1)>e)
     {
-        i++;
+        x3=(x1*f(x2)-x2*f(x1))/(f(x2)-f(x1));
         x1=x2;
         x2=x3;
-        x3=(x1*f(x2)-x2*f(x1))/(f(x2)-f(x1));
-        printf("The root after iteration %d is %f\n",i,x3);
+
+        printf("The root after iteration %d is %f\n",i++,x3);
+
     }
     getch();
     return 0;

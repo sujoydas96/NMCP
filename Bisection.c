@@ -26,10 +26,11 @@ int main()
             else
                 x1=x;
 
-            x=(x1+x2)/2;
+            x=( x1+x2 )/2;
             f1=fun(x1);
             f2=fun(x2);
             f=fun(x);
+            printf("\nThe required solution is %f",x);
         }
     printf("\nThe required solution is %f",x);
     getch();

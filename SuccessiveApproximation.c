@@ -17,9 +17,8 @@ int main()
     while(fabs(x2-x1)>e)
     {
         x1=x2;
+        printf("x%d = %f\n",i++,x2);
         x2=g(x1);
-        printf("x%d = %f\n",i,x2);
-        i++;
     }
     printf("\nThe root is %f",x2);
 
